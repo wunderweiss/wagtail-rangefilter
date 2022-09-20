@@ -3,9 +3,8 @@
 Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rangefilter/) into Wagtail's ModelAdmin
 
 
+[![PyPI](https://img.shields.io/pypi/v/wagtail-rangefilter)](https://pypi.org/project/wagtail-rangefilter/)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
-[![PyPI version](https://badge.fury.io/py/wagtail-rangefilter.svg)](https://badge.fury.io/py/wagtail-rangefilter)
 [![Wagtail Rangefilter CI](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml/badge.svg)](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml)
 
 ## Links
@@ -40,11 +39,11 @@ INSTALLED_APPS = [
 
 ```python
 from wagtail.contrib.modeladmin.options import ModelAdmin
-from wagtail_rangefilter.filters import DateTimeRangeFilter
+from wagtail_rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
 
 class ExampleAdmin(ModelAdmin):
     ...
-    list_filter = (("created_at", DateTimeRangeFilter),)
+    list_filter = (("test_date", DateRangeFilter), ("test_datetime", DateTimeRangeFilter),)
     ...
 
 ```
