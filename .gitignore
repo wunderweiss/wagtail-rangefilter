@@ -1,0 +1,15 @@
+*.pyc
+*.sqlite3
+/build
+/dist
+/wagtail_rangefilter.egg-info
+/.coverage
+/htmlcov
+/.tox
+/venv
+/.vscode
+/site
+/node_modules
+/test-static
+/test-media
+/.idea

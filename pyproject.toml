@@ -1,0 +1,68 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "wagtail-rangefilter"
+description = "Integrates django-admin-rangefilter into Wagtail's ModelAdmin"
+authors = [
+    { name = "Stefan Hammer", email = "stefan.hammer@wunderweiss.com" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = [
+    "django",
+    "rangefilter",
+    "wagtail",
+]
+dynamic = [
+    "version",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Wagtail",
+    "Framework :: Wagtail :: 2",
+    "Framework :: Wagtail :: 3",
+    "Framework :: Wagtail :: 4",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "django-admin-rangefilter",
+    "Django>=3.2",
+    "wagtail>=2.15",
+]
+
+[project.optional-dependencies]
+testing = [
+    "coverage~=6.4.4",
+    "tox~=3.26.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/wunderweiss/wagtail-rangefilter"
+Changelog = "https://github.com/wunderweiss/wagtail-rangefilter/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/wunderweiss/wagtail-rangefilter/issues"
+
+[tool.flit.module]
+name = "wagtail_rangefilter"
+
+[tool.flit.sdist]
+exclude = [
+    ".*",
+    "tests/",
+    "testmanage.py",
+    "tox.ini",
+]
