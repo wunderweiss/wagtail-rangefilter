@@ -10,18 +10,12 @@ https://docs.djangoproject.com/en/stable/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(PROJECT_DIR, ...)
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/stable/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "testing"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = "INTERACTIVE" in os.environ
 
 ALLOWED_HOSTS = ["*"]
 
@@ -160,11 +154,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/stable/howto/static-files/
 
 STATICFILES_FINDERS = [
-    "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
-
-STATICFILES_DIRS = [os.path.join(PROJECT_DIR, "static")]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "test-static")
 STATIC_URL = "/static/"

@@ -1,11 +1,12 @@
 # Wagtail Rangefilter
 
-Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rangefilter/) into Wagtail's ModelAdmin
-
-
 [![PyPI](https://img.shields.io/pypi/v/wagtail-rangefilter)](https://pypi.org/project/wagtail-rangefilter/)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![Wagtail Rangefilter CI](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml/badge.svg)](https://github.com/wunderweiss/wagtail-rangefilter/actions/workflows/test.yml)
+
+Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rangefilter/) into Wagtail's ModelAdmin
+
+![Screenshot](https://raw.githubusercontent.com/wunderweiss/wagtail-rangefilter/main/.github/screenshot.png)
 
 ## Links
 

@@ -3,5 +3,5 @@
 ## Update Migrations
 
 ```shell
-./testmanage.py makemigrations wagtail_rangefilter_testapp
+./manage.py makemigrations wagtail_rangefilter_testapp
 ```
