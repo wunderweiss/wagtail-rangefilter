@@ -12,8 +12,8 @@
             <input type="hidden" id="{{ choice.system_name }}-query-string" value="{{ choice.query_string }}">
         {% endfor %}
         <div>
-            <input type="submit" class="button" value="{% translate 'Search' %}">
-            <input type="reset" class="button" value="{% translate 'Reset' %}">
+            <button value="{% translate 'Search' %}" type="submit" class="button">{% translate 'Search' %}</button>
+            <button value="{% translate 'Reset' %}" type="reset" class="button button-secondary">{% translate 'Reset' %}</button>
         </div>
     </form>
 </div>
