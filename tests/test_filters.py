@@ -2,11 +2,7 @@ import datetime
 
 from django.test import TestCase
 from django.utils.timezone import make_aware
-
-try:
-    from wagtail.test.utils import WagtailTestUtils
-except ImportError:
-    from wagtail.tests.utils import WagtailTestUtils
+from wagtail.test.utils import WagtailTestUtils
 
 from tests.testapp.models import TestModel
 
