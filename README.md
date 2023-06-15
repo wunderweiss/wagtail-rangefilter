@@ -16,9 +16,9 @@ Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rang
 
 ## Supported versions
 
-- Python 3.7, 3.8, 3.9, 3.10
-- Django 3.2, 4.0, 4.1
-- Wagtail 2.15, 3.0, 4.0
+- Python 3.8, 3.9, 3.10, 3.11
+- Django 3.2, 4.1, 4.2
+- Wagtail 4.1, 4.2, 5.0
 
 ## Installation
 
