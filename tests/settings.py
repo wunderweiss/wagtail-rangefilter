@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 SECRET_KEY = "testing"
 
-DEBUG = "INTERACTIVE" in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -81,18 +81,6 @@ TEMPLATES = [
         },
     }
 ]
-
-
-# Using DatabaseCache to make sure that the cache is cleared between tests.
-# This prevents false-positives in some wagtail core tests where we are
-# changing the 'wagtail_root_paths' key which may cause future tests to fail.
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
-        "LOCATION": "cache",
-    }
-}
-
 
 # don't use the intentionally slow default password hasher
 PASSWORD_HASHERS = ("django.contrib.auth.hashers.MD5PasswordHasher",)
