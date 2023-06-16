@@ -1,4 +1,5 @@
 from wagtail.contrib.modeladmin.options import ModelAdmin, modeladmin_register
+
 from wagtail_rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
 
 from .models import TestModel
