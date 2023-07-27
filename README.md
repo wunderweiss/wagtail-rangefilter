@@ -54,3 +54,10 @@ class ExampleAdmin(ModelAdmin):
 ```shell
 pip install -e '.[testing]' -U
 ```
+
+## Running the testapp
+
+```shell
+cp tests/local.py.example tests/local.py
+python manage.py runserver
+```

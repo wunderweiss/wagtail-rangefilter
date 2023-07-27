@@ -15,7 +15,8 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 SECRET_KEY = "testing"
 
-DEBUG = True
+# Override in `local.py`
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -81,6 +82,18 @@ TEMPLATES = [
         },
     }
 ]
+
+
+# Using DatabaseCache to make sure that the cache is cleared between tests.
+# This prevents false-positives in some wagtail core tests where we are
+# changing the 'wagtail_root_paths' key which may cause future tests to fail.
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "LOCATION": "cache",
+    }
+}
+
 
 # don't use the intentionally slow default password hasher
 PASSWORD_HASHERS = ("django.contrib.auth.hashers.MD5PasswordHasher",)
@@ -156,3 +169,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "test-media")
 WAGTAIL_SITE_NAME = "Wagtail Rangefilter test site"
 
 BASE_URL = WAGTAILADMIN_BASE_URL = "http://localhost"
+
+
+# Import settings from local.py file if it exists. Please use it to keep
+# settings that are not meant to be checked into Git and never check it in.
+try:
+    from .local import *  # noqa
+except ImportError:
+    pass
