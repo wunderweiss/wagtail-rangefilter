@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 SECRET_KEY = "testing"
 
 # Override in `local.py`
-DEBUG = False
+DEBUG = "INTERACTIVE" in os.environ
 
 ALLOWED_HOSTS = ["*"]
 
