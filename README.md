@@ -58,6 +58,11 @@ pip install -e '.[testing]' -U
 ## Running the testapp
 
 ```shell
+tox -e interactive
+```
+
+Alternative:
+```shell
 cp tests/local.py.example tests/local.py
 python manage.py runserver
 ```
