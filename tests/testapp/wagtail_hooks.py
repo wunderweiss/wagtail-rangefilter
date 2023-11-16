@@ -1,4 +1,9 @@
-from wagtail.contrib.modeladmin.options import ModelAdmin, modeladmin_register
+from wagtail import VERSION as WAGTAIL_VERSION
+
+if WAGTAIL_VERSION >= (5, 1):
+    from wagtail_modeladmin.options import ModelAdmin, modeladmin_register
+else:
+    from wagtail.contrib.modeladmin.options import ModelAdmin, modeladmin_register
 
 from wagtail_rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
 

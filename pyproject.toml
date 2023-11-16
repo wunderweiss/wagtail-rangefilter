@@ -48,6 +48,7 @@ dependencies = [
 testing = [
     "coverage~=6.4.4",
     "tox~=3.26.0",
+    "wagtail-modeladmin~=1.0.0",
 ]
 
 [project.urls]
