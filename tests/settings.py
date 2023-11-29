@@ -22,6 +22,12 @@ ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
+try:
+    import wagtail_modeladmin
+except ImportError:
+    modeladmin_package_name = "wagtail.contrib.modeladmin"
+else:
+    modeladmin_package_name = "wagtail_modeladmin"
 
 INSTALLED_APPS = [
     "tests.testapp",
@@ -38,7 +44,7 @@ INSTALLED_APPS = [
     "wagtail.search",
     "wagtail.admin",
     "wagtail.api.v2",
-    "wagtail.contrib.modeladmin",
+    modeladmin_package_name,
     "wagtail.contrib.routable_page",
     "wagtail.contrib.styleguide",
     "wagtail.sites",

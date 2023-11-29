@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added support Wagtail 5.1, 5.2 (by @lparsons396, @katdom13)
-- Drop tests for Wagtail 4.2, 5.0 as they have reached EOL (@katdom13)
+- Adapted tests against Wagtail >= 6.0 due to removed `wagtail.contrib.modeladmin`
+- Added tests against Wagtail 5.1, 5.2 (by @lparsons396, @katdom13)
+- Drop tests for Wagtail 4.2, 5.0 and Django 4.1 as they have reached EOL (@katdom13, @th3hamm0r)
 
 ## [0.2.0] - 2023-07-31
 
