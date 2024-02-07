@@ -42,9 +42,9 @@ class DateRangeFilter(WagtailDateRangeMixin, BaseDateRangeFilter):
 
 
 class DateTimeRangeFilter(WagtailDateRangeMixin, BaseDateTimeRangeFilter):
-    def _get_expected_fields(self):
+    def expected_parameters(self):
         # We don't use the SplitDateTimeField, therefore we use the DateRangeFilter's definition.
-        return super(BaseDateTimeRangeFilter, self)._get_expected_fields()
+        return super(BaseDateTimeRangeFilter, self).expected_parameters()
 
     def _get_form_fields(self):
         return {

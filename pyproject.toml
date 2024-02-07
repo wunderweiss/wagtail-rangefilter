@@ -39,7 +39,7 @@ classifiers = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "django-admin-rangefilter",
+    "django-admin-rangefilter>=0.12",
     "Django>=3.2",
     "wagtail>=4.1",
 ]
