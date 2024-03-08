@@ -22,11 +22,11 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "Framework :: Django",
     "Framework :: Django :: 3.2",
-    "Framework :: Django :: 4.1",
     "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
     "Framework :: Wagtail",
-    "Framework :: Wagtail :: 4",
     "Framework :: Wagtail :: 5",
+    "Framework :: Wagtail :: 6",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
@@ -36,18 +36,20 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 requires-python = ">=3.8"
 dependencies = [
     "django-admin-rangefilter>=0.12",
     "Django>=3.2",
-    "wagtail>=4.1",
+    "wagtail>=5.2",
 ]
 
 [project.optional-dependencies]
 testing = [
     "coverage~=6.4.4",
     "tox~=3.26.0",
+    "wagtail-modeladmin==2.0.0",
 ]
 
 [project.urls]

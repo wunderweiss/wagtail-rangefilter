@@ -16,9 +16,9 @@ Integrates [django-admin-rangefilter](https://pypi.org/project/django-admin-rang
 
 ## Supported versions
 
-- Python 3.8, 3.9, 3.10, 3.11
-- Django 3.2, 4.2
-- Wagtail 4.1, 5.1, 5.2, 6.0 (with external package [wagtail-modeladmin](https://pypi.org/project/wagtail-modeladmin/))
+- Python 3.8, 3.9, 3.10, 3.11, 3.12
+- Django 3.2, 4.2, 5.0
+- Wagtail 5.2, 6.0 (with external package [wagtail-modeladmin](https://pypi.org/project/wagtail-modeladmin/))
 
 ## Installation
 
@@ -41,9 +41,7 @@ INSTALLED_APPS = [
 ## Example usage
 
 ```python
-# Starting with Wagtail 6.0, the external package "wagtail-modeladmin" is required:
-# from wagtail_modeladmin.options import ModelAdmin
-from wagtail.contrib.modeladmin.options import ModelAdmin
+from wagtail_modeladmin.options import ModelAdmin
 from wagtail_rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
 
 class ExampleAdmin(ModelAdmin):
