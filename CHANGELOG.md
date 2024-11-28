@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Drop tests for Django < 4.2 as it has reached EOL (@katdom13)
 - Add tests for Python 3.12 (@katdom13)
 - Add `wagtail-modeladmin` to testing dependencies (@katdom13)
+- Add python 3.13 to testing matrix
 
 ## [0.2.1] - 2024-02-07
 
