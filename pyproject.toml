@@ -49,7 +49,7 @@ dependencies = [
 testing = [
     "coverage~=7.5.1",
     "tox~=4.15.0",
-    "wagtail-modeladmin==2.0.0",
+    "wagtail-modeladmin~=2.1",
 ]
 
 [project.urls]
