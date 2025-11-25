@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Wagtail 7.2 maintenance
+
+- Add tox testing for Wagtail 7.2
+- Drop tests for Wagtail 5.2 as it has reached EOL
+- Add tests for Python 3.14
+- Drop tests for Python 3.9 as it has reached EOL
+
 Wagtail 7.0 maintenance
 
 - Add tox testing for Wagtail 7.0 & Django 5.2
